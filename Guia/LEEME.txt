@@ -1,0 +1,19 @@
+SMA_LAMP - GUIA PASO A PASO Y CODIGO POR SEPARADO
+
+Guia_SMA_LAMP_Paso_a_Paso_Sin_Codigo.tex  -> documento editable con instrucciones detalladas
+Guia_SMA_LAMP_Paso_a_Paso_Sin_Codigo.pdf  -> documento compilado y revisado
+
+El documento NO contiene los listados completos de .c/.h.
+
+El paquete conjunto contiene:
+  Guia/     -> guia editable y PDF
+  Firmware/ -> archivos .c/.h ya elaborados, ejemplos docentes intactos,
+               pruebas de ordenador, README y advertencias de hardware
+
+Para compilar: crear proyecto MPLAB X para PIC16F886 con XC8, agregar
+los 14 .c de Firmware/src y configurar Firmware/include como ruta
+para las cabeceras. NO agregar como fuentes los originales contenidos
+bajo bibliotecas_originales/.
+
+XC8 y funcionamiento sobre PIC/placa real NO se han verificado aun.
+Revisar especialmente alimentacion y niveles de 3.3 V antes de I2C.
